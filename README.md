@@ -15,10 +15,12 @@
 ## 环境配置
 ```bash
 pip install requests
+```
 
 ## 运行测试
 ```bash
 python test_weather_api.py
+```
 
 ## 测试报告
 执行后会在 reports/ 目录生成 HTML 报告。
@@ -29,3 +31,4 @@ cd /d D:\aaa测试项目\03_api_test
 git add README.md
 git commit -m "添加项目说明文档"
 git push
+```
