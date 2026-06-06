@@ -1,0 +1,32 @@
+# 接口自动化测试框架
+
+## 项目简介
+基于 Python + Requests 的接口自动化测试框架，用于对天气查询 API 进行功能验证。
+
+## 功能特性
+- 数据驱动测试：支持多组城市参数批量执行
+- 多维度校验：HTTP状态码、JSON结构、业务字段
+- 正反用例设计：正常城市 + 异常输入
+- 自动生成 HTML 测试报告
+
+## 发现的问题
+测试发现，API 对于不存在的城市（如"不存在的城市123"）返回 200 状态码而非预期的 404，说明 API 的异常处理可以进一步优化。
+
+## 环境配置
+```bash
+pip install requests
+```
+
+## 运行测试
+```bash
+python test_weather_api.py
+```
+
+## 测试报告
+执行后会在 reports/ 目录生成 HTML 报告。
+然后上传：
+```bash
+git add README.md
+git commit -m "添加项目说明文档"
+git push
+```
