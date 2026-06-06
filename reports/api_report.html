@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>接口自动化测试报告</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .summary { background: #f0f0f0; padding: 10px; border-radius: 5px; margin: 20px 0; }
+        .pass { color: green; }
+        .fail { color: red; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #2196F3; color: white; }
+    </style>
+</head>
+<body>
+    <h1>🔌 接口自动化测试报告</h1>
+    <div class="summary">
+        <p><strong>执行时间：</strong> 2026-06-06 12:03:53</p>
+        <p><strong>测试接口：</strong> https://wttr.in (天气查询API)</p>
+        <p><strong>总计测试数：</strong> 4</p>
+        <p><strong>✅ 通过：</strong> 3</p>
+        <p><strong>❌ 失败：</strong> 1</p>
+        <p><strong>📊 通过率：</strong> 75.0%</p>
+    </div>
+    <table>
+        <tr>
+            <th>状态</th>
+            <th>测试城市</th>
+            <th>响应码</th>
+        </tr>
+
+        <tr>
+            <td class="pass">✅ 通过</td>
+            <td>北京</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td class="pass">✅ 通过</td>
+            <td>上海</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td class="pass">✅ 通过</td>
+            <td>广州</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td class="fail">❌ 失败</td>
+            <td>不存在的城市123</td>
+            <td>200</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>📝 测试说明</h3>
+    <ul>
+        <li>验证了正常城市（北京、上海、广州）的天气查询</li>
+        <li>验证了异常城市（不存在）的错误处理</li>
+        <li>校验了HTTP状态码、响应格式、业务数据</li>
+    </ul>
+    <p><small>报告生成时间：2026-06-06 12:03:53</small></p>
+</body>
+</html>
