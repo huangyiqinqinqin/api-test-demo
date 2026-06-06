@@ -15,3 +15,26 @@
 ## 环境配置
 ```bash
 pip install requests
+```
+
+## 运行测试
+```bash
+python test_weather_api.py
+```
+
+## 测试报告
+执行后会在 reports/ 目录生成 HTML 报告。
+
+## JMeter性能测试
+- 线程数：10
+- 循环次数：2
+- 平均响应时间：<1000ms
+- 错误率：0%
+```
+---
+## 上传更新
+```bash
+git add README.md
+git commit -m "更新README：补充Postman和JMeter说明"
+git push
+```
